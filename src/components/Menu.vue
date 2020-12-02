@@ -8,6 +8,9 @@
       <li>
         <router-link to="/random">random</router-link>
       </li>
+      <li>
+        <router-link to="/ts">Ts</router-link>
+      </li>
     </ul>
   </div>
 </template>

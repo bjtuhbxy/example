@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 import VideoNetWork from '../views/Video-Network.vue'
 import Random from '../views/Random.vue'
+import Ts from '../views/Ts.vue'
 
 Vue.use(VueRouter)
 
@@ -11,6 +12,11 @@ const routes: Array<RouteConfig> = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/ts',
+    name: 'ts',
+    component: Ts
   },
   {
     path: '/video-network',
