@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- <Menu msg="Welcome to Your Vue.js App"/> -->
-    <video webkit-playsinline="true" playsinline="true" v-for="(item, index) in [1,2,3,4,5,6,7,8]" :key="index" controls :src="'http://localhost:8078/' + (index + 1) + '.mp4'" autoplay></video>
+    <video webkit-playsinline="true" playsinline="true" v-for="(item, index) in [1,2,3,4,5,6,7,8]" :key="index" controls :src="'http://localhost:8078/' + '1' + '.mp4'" autoplay></video>
     <p @click="play">播放</p>
     <p @click="stop">暂停</p>
   </div>
