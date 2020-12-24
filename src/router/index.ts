@@ -3,6 +3,8 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 import VideoNetWork from '../views/Video-Network.vue'
 import Random from '../views/Random.vue'
+import ScreenShot from '../views/ScreenShot.vue'
+import Canvas from '../views/Canvas.vue'
 import Ts from '../views/Ts.vue'
 
 Vue.use(VueRouter)
@@ -19,6 +21,11 @@ const routes: Array<RouteConfig> = [
     component: Ts
   },
   {
+    path: '/screen-shot',
+    name: 'ScreenShot',
+    component: ScreenShot
+  },
+  {
     path: '/video-network',
     name: 'VideoNetWork',
     component: VideoNetWork
@@ -27,6 +34,11 @@ const routes: Array<RouteConfig> = [
     path: '/random',
     name: 'Random',
     component: Random
+  },
+  {
+    path: '/canvas',
+    name: 'Canvas',
+    component: Canvas
   },
   {
     path: '/about',

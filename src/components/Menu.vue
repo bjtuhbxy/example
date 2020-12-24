@@ -11,6 +11,12 @@
       <li>
         <router-link to="/ts">Ts</router-link>
       </li>
+      <li>
+        <router-link to="/screen-shot">Screen shot</router-link>
+      </li>
+      <li>
+        <router-link to="/canvas">canvas</router-link>
+      </li>
     </ul>
   </div>
 </template>

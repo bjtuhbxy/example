@@ -45,6 +45,8 @@ export default {
       timer: null
     }
   },
+  mounted() {
+  },
   methods: {
     random() {
       const vue = this
