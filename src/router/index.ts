@@ -6,6 +6,8 @@ import Random from '../views/Random.vue'
 import ScreenShot from '../views/ScreenShot.vue'
 import Canvas from '../views/Canvas.vue'
 import Ts from '../views/Ts.vue'
+import Media from '../views/Media.vue'
+import MediaCollection from '../views/Media/MediaCollection.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +41,16 @@ const routes: Array<RouteConfig> = [
     path: '/canvas',
     name: 'Canvas',
     component: Canvas
+  },
+  {
+    path: '/media',
+    name: 'Media',
+    component: Media
+  },
+  {
+    path: '/mediacollection',
+    name: 'MediaCollection',
+    component: MediaCollection
   },
   {
     path: '/about',
