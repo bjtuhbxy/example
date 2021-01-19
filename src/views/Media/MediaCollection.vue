@@ -76,7 +76,9 @@ export default {
           share.play();
         };
       })
-      .catch()
+      .catch(err => {
+        this.$message('获取桌面共享权限失败');
+      })
     },
     stopPlayShare() {
       const vue = this
