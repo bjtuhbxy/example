@@ -77,7 +77,13 @@ export default {
         };
       })
       .catch(err => {
-        this.$message('获取桌面共享权限失败');
+        console.log(typeof err);
+        // DOMException: Permission denied by system
+        if (err.toString().indexOf('by system') > -1) {
+          this.$message('您未授权浏览器桌面共享权限');
+        }else {
+          this.$message('您取消了桌面共享');
+        }
       })
     },
     stopPlayShare() {

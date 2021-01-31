@@ -33,10 +33,23 @@
           <i class="el-icon-document"></i>
           <span slot="title">webrtc检测</span>
         </el-menu-item>
-        <el-menu-item index="4">
-          <i class="el-icon-setting"></i>
-          <span slot="title">导航四</span>
-        </el-menu-item>
+        <el-submenu index="4">
+          <template slot="title">
+            <i class="el-icon-setting"></i>
+            <span>常用工具</span>
+          </template>
+          <el-menu-item-group>
+            <el-menu-item index="4-1">
+              <router-link to="/timecat">TimeCAT</router-link>
+            </el-menu-item>
+            <el-menu-item index="4-2">选项2</el-menu-item>
+          </el-menu-item-group>
+          <el-menu-item index="4-3">选项3</el-menu-item>
+          <el-submenu index="4-4">
+            <template slot="title">选项4</template>
+            <el-menu-item index="4-4-1">选项1</el-menu-item>
+          </el-submenu>
+        </el-submenu>
       </el-menu>
     </el-col>
   </el-row>

@@ -8,6 +8,7 @@ import Canvas from '../views/Canvas.vue'
 import Ts from '../views/Ts.vue'
 import Media from '../views/Media.vue'
 import MediaCollection from '../views/Media/MediaCollection.vue'
+import TimeCat from '../views/Media/TimeCat.vue'
 
 Vue.use(VueRouter)
 
@@ -51,6 +52,12 @@ const routes: Array<RouteConfig> = [
     path: '/mediacollection',
     name: 'MediaCollection',
     component: MediaCollection
+  },
+
+  {
+    path: '/timecat',
+    name: 'timecat',
+    component: TimeCat
   },
   {
     path: '/about',
