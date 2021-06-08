@@ -9,6 +9,7 @@ import Ts from '../views/Ts.vue'
 import Media from '../views/Media.vue'
 import MediaCollection from '../views/Media/MediaCollection.vue'
 import TimeCat from '../views/Media/TimeCat.vue'
+import CodeEdit from '../views/CommonTools/CodeEdit.vue'
 
 Vue.use(VueRouter)
 
@@ -53,11 +54,15 @@ const routes: Array<RouteConfig> = [
     name: 'MediaCollection',
     component: MediaCollection
   },
-
   {
     path: '/timecat',
     name: 'timecat',
     component: TimeCat
+  },
+  {
+    path: '/codeedit',
+    name: 'codeedit',
+    component: CodeEdit
   },
   {
     path: '/about',

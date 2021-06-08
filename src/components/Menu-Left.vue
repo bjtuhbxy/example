@@ -42,7 +42,9 @@
             <el-menu-item index="4-1">
               <router-link to="/timecat">TimeCAT</router-link>
             </el-menu-item>
-            <el-menu-item index="4-2">选项2</el-menu-item>
+            <el-menu-item index="4-1">
+              <router-link to="/codeedit">代码编辑器</router-link>
+            </el-menu-item>
           </el-menu-item-group>
           <el-menu-item index="4-3">选项3</el-menu-item>
           <el-submenu index="4-4">
